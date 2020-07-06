@@ -25,7 +25,47 @@ class Palindrome {
     System.out.print("In:");
     String s = inp.nextLine();
    	//write your code below
-   	
-   	
+        s = s.replace(" ", "");
+        s = s.replace(",", "");
+        s = s.replace(".", "");
+        s = s.replace(";", "");
+
+        for(int i = 0; i<s.length(); i++) {
+            s = s.replace(s.substring(i,i+1), s.substring(i,i+1).toLowerCase());
+        }
+        
+        s = s.replace("á", "a");
+        s = s.replace("é", "e");
+        s = s.replace("í", "i");
+        s = s.replace("ó", "o");
+        s = s.replace("ú", "u");
+        s = s.replace("ñ", "n");
+
+        
+        String aux1 = ""; 
+        String aux2 = "";
+        
+        int medianaString = s.length() / 2;
+        for(int i = 0; i < medianaString; i++){
+            aux1 = aux1 + s.substring(i, i+1);
+        }
+
+
+         for(int i = s.length()-1; i > medianaString; i--){
+            aux2 = aux2 + s.substring(i, i+1);
+        }
+      
+        System.out.println(isItPalindrome(aux1, aux2));
+  }
+  
+  public static boolean isItPalindrome(String linea1, String linea2) {
+      boolean Palindrome;
+      if (linea1.equals(linea2)) {
+          Palindrome = true;
+      }else {
+          Palindrome = false;
+      }
+      
+      return Palindrome;
   }
 }
