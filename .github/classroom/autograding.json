@@ -1,0 +1,144 @@
+{
+  "tests": [
+    {
+      "name": "E1 - ALLCAPS",
+      "setup": "",
+      "run": "javac MixedCase.java && java MixedCase",
+      "input": "ALLCAPS",
+      "output": "In:aLlCaPs",
+      "comparison": "exact",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "E1 - environment",
+      "setup": "",
+      "run": "javac MixedCase.java && java MixedCase",
+      "input": "environment",
+      "output": "In:eNvIrOnMeNt",
+      "comparison": "exact",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "E1 - proGRAMming",
+      "setup": "",
+      "run": "javac MixedCase.java && java MixedCase",
+      "input": "proGRAMming",
+      "output": "In:pRoGrAmMiNg",
+      "comparison": "exact",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "E2 - 3 11",
+      "setup": "",
+      "run": "javac SumOddsRange.java && java SumOddsRange",
+      "input": "3\r\n11",
+      "output": "#1: #2: 35",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "E2 - 4 20",
+      "setup": "",
+      "run": "javac SumOddsRange.java && java SumOddsRange",
+      "input": "4\r\n20",
+      "output": "#1: #2: 96",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "E2 - -2 6",
+      "setup": "",
+      "run": "javac SumOddsRange.java && java SumOddsRange",
+      "input": "-2\r\n6",
+      "output": "#1: #2: 8",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "E3 - some string heyoo",
+      "setup": "",
+      "run": "JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8 javac Palindrome.java && java Palindrome",
+      "input": "some string heyoo",
+      "output": "In:false",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "E3 - oozy RAT in a sanitary ZOO",
+      "setup": "",
+      "run": "JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8 javac Palindrome.java && java Palindrome",
+      "input": "oozy RAT in a sanitary ZOO",
+      "output": "In:true",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "E3 - racecar",
+      "setup": "",
+      "run": "JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8 javac Palindrome.java && java Palindrome",
+      "input": "racecar",
+      "output": "In:true",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "E3 - a Toyotas a Toyota",
+      "setup": "",
+      "run": "JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8 javac Palindrome.java && java Palindrome",
+      "input": "a Toyotas a Toyota",
+      "output": "In:true",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "E3 - Was it a car or a cat I saw",
+      "setup": "",
+      "run": "JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8 javac Palindrome.java && java Palindrome",
+      "input": "Was it a car or a cat I saw",
+      "output": "In:true",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "E3 - this is not a palindrome",
+      "setup": "",
+      "run": "JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8 javac Palindrome.java && java Palindrome",
+      "input": "this is not a palindrome",
+      "output": "In:false",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "E3 - Amor a Roma",
+      "setup": "",
+      "run": "JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8 javac Palindrome.java && java Palindrome",
+      "input": "Amor a Roma",
+      "output": "In:true",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    },
+    {
+      "name": "E3 - Acaso hubo búhos acá.",
+      "setup": "",
+      "run": "JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8 javac Palindrome.java && java Palindrome",
+      "input": "Acaso hubo buhos aca.",
+      "output": "In:true",
+      "comparison": "included",
+      "timeout": 5,
+      "points": 1
+    }
+  ]
+}
